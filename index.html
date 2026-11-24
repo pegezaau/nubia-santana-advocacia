@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dra. Núbia Santana — Advocacia Previdenciária (INSS) | Ibirapitanga/BA</title>
+<meta name="description" content="Advocacia previdenciária em Ibirapitanga/BA e online: aposentadorias, revisão de benefício do INSS, salário-maternidade e benefícios. Análise do seu caso com a Dra. Núbia Santana.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F7F4EE; --card:#FFFFFF; --band:#EFEAE1;
+  --vinho:#1226AA; --vinho-dark:#121E36;
+  --ouro:#C2CBE4; --terra:#8F6F69; --grafite:#2B2424;
+  --texto:#3A3232; --suave:#6E5F5C;
+  --linha:rgba(176,138,60,.45);
+  --radius:18px;
+  --shadow:0 18px 45px rgba(43,36,36,.10);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',sans-serif;background:var(--bg);color:var(--texto);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+h1,h2,h3,.serif{font-family:'Fraunces',serif;color:var(--grafite);font-weight:500}
+h1 em,h2 em{font-style:italic;color:var(--vinho)}
+.eyebrow{font-size:.72rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--ouro)}
+.btn-wa{display:inline-flex;align-items:center;gap:10px;background:var(--vinho);color:#fff;font-weight:700;font-size:.98rem;padding:15px 26px;border-radius:999px;transition:.25s;box-shadow:0 12px 28px rgba(27,42,74,.28)}
+.btn-wa:hover{background:var(--vinho-dark);transform:translateY(-2px)}
+.btn-wa svg{width:20px;height:20px;flex:none}
+.btn-wa.small{padding:10px 18px;font-size:.86rem}
+.microcopy{font-size:.82rem;color:var(--suave);margin-top:12px}
+/* HEADER */
+header{position:sticky;top:0;z-index:50;background:rgba(248,244,239,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(27,42,74,.10)}
+.header-in{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:16px}
+.logo{line-height:1.15}
+.logo .nome{font-family:'Fraunces',serif;font-size:1.28rem;font-weight:600;color:var(--grafite)}
+.logo .sub{font-size:.66rem;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--ouro)}
+/* HERO */
+.hero{padding:56px 0 64px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:start}
+.hero h1{font-size:clamp(2.3rem,4.6vw,3.6rem);line-height:1.12;letter-spacing:-.01em;margin:18px 0 16px}
+.hero .subtitulo{font-size:1.13rem;font-weight:800;color:var(--grafite);margin-bottom:12px}
+.hero .leve{font-size:1.02rem;color:var(--suave);max-width:52ch;margin-bottom:28px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.pill{font-size:.78rem;font-weight:700;color:var(--vinho);background:#fff;border:1px solid rgba(27,42,74,.22);padding:7px 13px;border-radius:999px}
+.pill b{color:var(--ouro);font-weight:800}
+/* FOTO / ARCO */
+.hero-foto{position:relative}
+.arco{border:3px solid var(--vinho);border-radius:999px 999px 22px 22px;padding:10px;background:#fff;box-shadow:var(--shadow)}
+.arco img{border-radius:999px 999px 14px 14px;width:100%;height:520px;object-fit:cover;object-position:top center}
+.cred-card{position:absolute;background:#fff;border-radius:14px;box-shadow:0 14px 34px rgba(43,36,36,.16);padding:12px 16px;display:flex;gap:11px;align-items:center;max-width:250px}
+.cred-card svg{width:26px;height:26px;flex:none;color:var(--ouro)}
+.cred-card .t{font-size:.8rem;font-weight:800;color:var(--grafite);line-height:1.3}
+.cred-card .s{font-size:.72rem;color:var(--suave);line-height:1.35}
+.cred-1{top:56px;left:-38px}
+.cred-2{bottom:118px;right:-30px}
+.painel{background:var(--vinho);color:#fff;border-radius:16px;padding:20px 24px;margin-top:16px;text-align:center}
+.painel .nome{font-family:'Fraunces',serif;font-size:1.35rem;font-weight:600}
+.painel .cargo{font-size:.72rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:#E9C87E;margin:3px 0 8px}
+.painel .frase{font-family:'Fraunces',serif;font-style:italic;font-size:1rem;color:#F6E8D8}
+/* SEÇÕES */
+section{padding:72px 0}
+.sec-head{max-width:720px;margin-bottom:42px}
+.sec-head h2{font-size:clamp(1.8rem,3.4vw,2.5rem);line-height:1.18;margin:14px 0 12px}
+.sec-head p{color:var(--suave);font-size:1rem}
+.dor{background:var(--band);border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)}
+.dor-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.dor p{color:var(--texto);margin-bottom:14px}
+.dor .destaque{font-family:'Fraunces',serif;font-size:1.25rem;color:var(--vinho);line-height:1.45}
+/* SERVIÇOS */
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.serv{background:var(--card);border:1px solid rgba(27,42,74,.10);border-radius:var(--radius);padding:28px 24px;transition:.25s;display:flex;flex-direction:column}
+.serv:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:rgba(176,138,60,.5)}
+.serv svg{width:34px;height:34px;color:var(--vinho);margin-bottom:16px}
+.serv h3{font-size:1.18rem;margin-bottom:8px}
+.serv p{font-size:.92rem;color:var(--suave);flex:1}
+.serv a{margin-top:16px;font-size:.86rem;font-weight:800;color:var(--vinho);display:inline-flex;align-items:center;gap:6px}
+.serv a:hover{color:var(--ouro)}
+/* COMO FUNCIONA */
+.passos{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.passo{background:var(--card);border-radius:var(--radius);padding:28px 24px;border-top:3px solid var(--ouro)}
+.passo .num{font-family:'Fraunces',serif;font-size:2rem;color:var(--vinho);line-height:1}
+.passo h3{font-size:1.08rem;margin:12px 0 6px}
+.passo p{font-size:.92rem;color:var(--suave)}
+/* SOBRE */
+.sobre{background:var(--band);border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)}
+.sobre-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.sobre .arco img{height:460px}
+.sobre h2{font-size:clamp(1.8rem,3.4vw,2.5rem);line-height:1.18;margin:14px 0 16px}
+.sobre p{margin-bottom:14px;color:var(--texto)}
+.sobre .citacao{font-family:'Fraunces',serif;font-style:italic;font-size:1.22rem;color:var(--vinho);line-height:1.5;border-left:3px solid var(--ouro);padding-left:18px;margin:22px 0}
+.creds{list-style:none;margin-top:8px}
+.creds li{display:flex;gap:11px;align-items:flex-start;padding:9px 0;border-bottom:1px solid rgba(27,42,74,.10);font-size:.95rem}
+.creds li svg{width:19px;height:19px;color:var(--ouro);flex:none;margin-top:3px}
+/* FAIXA */
+.faixa{background:var(--vinho);color:#fff;text-align:center;padding:54px 24px}
+.faixa .f1{font-size:.72rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:#E9C87E}
+.faixa .f2{font-family:'Fraunces',serif;font-size:clamp(1.5rem,3vw,2.1rem);margin-top:10px;line-height:1.3}
+.faixa .f2 em{font-style:italic;color:#E9C87E}
+/* FORM */
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+form{background:var(--card);border:1px solid rgba(27,42,74,.12);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+form label{font-size:.82rem;font-weight:800;color:var(--grafite);display:block;margin:16px 0 6px}
+form label:first-child{margin-top:0}
+form input,form select,form textarea{width:100%;padding:13px 14px;border:1.5px solid #E3D9CF;border-radius:10px;font-family:inherit;font-size:.95rem;background:#FDFBF8;color:var(--texto)}
+form input:focus,form select:focus,form textarea:focus{outline:none;border-color:var(--vinho)}
+form .erro{border-color:#C0392B !important}
+.form-btn{width:100%;justify-content:center;margin-top:22px;border:none;cursor:pointer;font-family:inherit}
+.form-nota{font-size:.78rem;color:var(--suave);text-align:center;margin-top:12px}
+/* FAQ */
+.faq-item{background:var(--card);border:1px solid rgba(27,42,74,.10);border-radius:14px;margin-bottom:12px;overflow:hidden}
+.faq-q{width:100%;background:none;border:none;font-family:inherit;font-size:1rem;font-weight:700;color:var(--grafite);text-align:left;padding:20px 22px;cursor:pointer;display:flex;justify-content:space-between;gap:14px;align-items:center}
+.faq-q .mais{font-family:'Fraunces',serif;font-size:1.4rem;color:var(--ouro);transition:.3s;line-height:1}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-a p{padding:0 22px 20px;color:var(--suave);font-size:.94rem}
+.faq-item.aberto .mais{transform:rotate(45deg)}
+/* CTA FINAL */
+.cta-final{background:var(--band);border-top:1px solid var(--linha)}
+.cta-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.cta-grid h2{font-size:clamp(1.9rem,3.6vw,2.6rem);line-height:1.18;margin:14px 0 14px}
+.cta-grid p{color:var(--suave);margin-bottom:26px;max-width:48ch}
+.cta-grid .arco img{height:420px}
+.dados{list-style:none;margin-top:26px}
+.dados li{display:flex;gap:11px;align-items:center;padding:7px 0;font-size:.95rem;color:var(--texto)}
+.dados li svg{width:19px;height:19px;color:var(--vinho);flex:none}
+/* RODAPÉ */
+footer{background:var(--grafite);color:#D9CFC8;padding:46px 0 30px;font-size:.9rem}
+.foot-grid{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap}
+footer .nome{font-family:'Fraunces',serif;font-size:1.2rem;color:#fff}
+footer a{color:#E9C87E}
+.foot-base{border-top:1px solid rgba(255,255,255,.12);margin-top:30px;padding-top:18px;font-size:.78rem;color:#A99B93;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+/* FLUTUANTE */
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 30px rgba(0,0,0,.25)}
+.wa-float svg{width:30px;height:30px;color:#fff}
+@media(max-width:960px){
+  .hero-grid,.dor-grid,.sobre-grid,.form-grid,.cta-grid{grid-template-columns:1fr}
+  .serv-grid,.passos{grid-template-columns:1fr 1fr}
+  .cred-1{left:6px;top:26px}
+  .cred-2{right:6px;bottom:110px}
+  .arco img{height:440px}
+  section{padding:54px 0}
+}
+@media(max-width:560px){
+  .serv-grid,.passos{grid-template-columns:1fr}
+  .header-in .btn-wa span{display:none}
+  .header-in .btn-wa{padding:11px 13px}
+  .hero{padding:38px 0 48px}
+  .arco img{height:400px}
+  .cred-card{max-width:210px;padding:10px 12px}
+}
+
+
+/* ajustes da identidade azul royal + prata da Núbia */
+.eyebrow{color:#2B4ACB}
+.pill b{color:#1226AA}
+.num{color:#2B4ACB}
+.dados svg{color:#1226AA}
+.arco.logo-frame{background:#011AA5;border-color:#081257}
+.arco.logo-frame img{object-fit:contain;padding:20px}
+.serv h3{color:var(--vinho-esc)}
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-in">
+    <a class="logo" href="#">
+      <div class="nome">Núbia Santana</div>
+      <div class="sub">Advocacia Previdenciária — Ibirapitanga/BA</div>
+    </a>
+    <a class="btn-wa small" href="https://wa.me/5571991579080?text=Ol%C3%A1%2C%20Dra.%20N%C3%BAbia!%20Vim%20pelo%20site%20e%20quero%20uma%20an%C3%A1lise%20do%20meu%20benef%C3%ADcio." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.22-.08-.37-.12-.53.13-.16.24-.62.76-.76.94-.14.18-.28.2-.53.07-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.28.37-.42.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.13-.53-1.29-.74-1.78-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.68.31-.25.24-1.05 1.02-1.05 2.55s1.07 3.01 1.23 3.22c.16.2 2.12 3.24 5.14 4.54.72.31 1.28.5 1.72.63.72.23 1.38.2 1.9.12.58-.09 1.78-.72 2.19-1.45.41-.72.41-1.34.29-1.47-.13-.12-.24-.19-.5-.32z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Advocacia Previdenciária — Ibirapitanga/BA e online</div>
+      <h1>Seu benefício do INSS não pode <em>esperar</em></h1>
+      <p class="subtitulo">Aposentadorias, revisão de benefício, salário-maternidade e demais benefícios, com análise do seu caso antes de qualquer passo.</p>
+      <p class="leve">A NS Advocacia atende online e presencialmente em Ibirapitanga/BA: você fala direto com a Dra. Núbia Santana, especialista em Direito Previdenciário.</p>
+      <a class="btn-wa" href="https://wa.me/5571991579080?text=Ol%C3%A1%2C%20Dra.%20N%C3%BAbia!%20Vim%20pelo%20site%20e%20quero%20uma%20an%C3%A1lise%20do%20meu%20benef%C3%ADcio." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.22-.08-.37-.12-.53.13-.16.24-.62.76-.76.94-.14.18-.28.2-.53.07-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.28.37-.42.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.13-.53-1.29-.74-1.78-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.68.31-.25.24-1.05 1.02-1.05 2.55s1.07 3.01 1.23 3.22c.16.2 2.12 3.24 5.14 4.54.72.31 1.28.5 1.72.63.72.23 1.38.2 1.9.12.58-.09 1.78-.72 2.19-1.45.41-.72.41-1.34.29-1.47-.13-.12-.24-.19-.5-.32z"/></svg>
+        Pedir análise do meu benefício
+      </a>
+      <p class="microcopy">Primeira conversa pelo WhatsApp, sem compromisso.</p>
+      <div class="pills">
+        <span class="pill">Especialista em <b>Direito Previdenciário</b></span>
+        <span class="pill">Atendimento <b>online e presencial</b></span>
+        <span class="pill">Ibirapitanga/BA <b>e região</b></span>
+        <span class="pill">Atendimento <b>09:00 às 17:00</b></span>
+      </div>
+    </div>
+    <div class="hero-foto">
+      <div class="arco logo-frame"><img src="logo-nubia.png" alt="Núbia Batista Santana, Advocacia Previdenciária"></div>
+      <div class="cred-card cred-1">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6l7-3z" stroke-linejoin="round"/><path d="M9 11.5l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div><div class="t">Especialista em INSS</div><div class="s">Aposentadorias, revisões e benefícios</div></div>
+      </div>
+      <div class="cred-card cred-2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2" stroke-linecap="round"/></svg>
+        <div><div class="t">Online e presencial</div><div class="s">Atendimento das 09:00 às 17:00</div></div>
+      </div>
+      <div class="painel">
+        <div class="nome">Dra. Núbia Santana</div>
+        <div class="cargo">NS Advocacia — Previdenciário</div>
+        <div class="frase">"Seu direito, defendido com clareza."</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DOR E EMPATIA -->
+<section class="dor">
+  <div class="wrap dor-grid">
+    <div>
+      <div class="eyebrow">Dor e empatia</div>
+      <h2 class="serif" style="font-size:clamp(1.8rem,3.4vw,2.5rem);line-height:1.18;margin:14px 0 12px">Benefício negado não é <em>o fim da linha</em></h2>
+      <p class="destaque">"Muita gente recebe a negativa do INSS e desiste, ou aceita um valor menor do que tem direito, por não saber que pode recorrer e revisar."</p>
+    </div>
+    <div>
+      <p>Quem trabalhou a vida inteira não deveria travar numa fila ou numa carta de indeferimento. Negativa, valor errado e aposentadoria que nunca sai têm caminho: análise, recurso e revisão.</p>
+      <p>Com uma especialista em Direito Previdenciário, você descobre o que o INSS deixou passar e qual é o próximo passo certo para o seu caso.</p>
+      <p>Atendimento online e presencial, com explicação simples do começo ao fim.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Como posso ajudar</div>
+      <h2>Atuação em <em>direito previdenciário</em></h2>
+      <p>Escolha o assunto e peça a análise do seu caso pelo WhatsApp:</p>
+    </div>
+    <div class="serv-grid">
+      <div class="serv">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2" stroke-linecap="round"/></svg>
+        <h3>Aposentadorias</h3>
+        <p>Por idade, por tempo de contribuição e demais modalidades: análise do seu histórico para saber quando e como se aposentar com o melhor valor.</p>
+        <a href="https://wa.me/5571991579080?text=Ol%C3%A1%2C%20Dra.%20N%C3%BAbia!%20Quero%20uma%20an%C3%A1lise%20sobre%20aposentadoria." target="_blank" rel="noopener">Pedir análise →</a>
+      </div>
+      <div class="serv">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 9a8 8 0 0 1 14.5-3M20 15a8 8 0 0 1-14.5 3" stroke-linecap="round"/><path d="M18.5 2v4h-4M5.5 22v-4h4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Revisão de Benefício do INSS</h3>
+        <p>Benefício com valor menor do que o devido pode ser revisado. A análise confere seu histórico de contribuições e aponta se há diferença a recuperar.</p>
+        <a href="https://wa.me/5571991579080?text=Ol%C3%A1%2C%20Dra.%20N%C3%BAbia!%20Quero%20uma%20an%C3%A1lise%20sobre%20revis%C3%A3o%20do%20meu%20benef%C3%ADcio." target="_blank" rel="noopener">Pedir análise →</a>
+      </div>
+      <div class="serv">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20.5s-8-4.9-8-10.4C4 6.9 6.4 5 8.8 5c1.4 0 2.6.7 3.2 1.7C12.6 5.7 13.8 5 15.2 5 17.6 5 20 6.9 20 10.1c0 5.5-8 10.4-8 10.4z" stroke-linejoin="round"/></svg>
+        <h3>Salário-Maternidade</h3>
+        <p>Direito de mães seguradas, inclusive em situações que muita gente nem sabe que geram o benefício. Verifique o seu caso com uma análise completa.</p>
+        <a href="https://wa.me/5571991579080?text=Ol%C3%A1%2C%20Dra.%20N%C3%BAbia!%20Quero%20uma%20an%C3%A1lise%20sobre%20sal%C3%A1rio-maternidade." target="_blank" rel="noopener">Pedir análise →</a>
+      </div>
+      <div class="serv">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 3h9l4 4v14H6zM6 3v18M15 3v4h4" stroke-linejoin="round"/><path d="M9.5 12h6M9.5 15.5h6" stroke-linecap="round"/></svg>
+        <h3>Benefício Negado ou Travado</h3>
+        <p>Recebeu uma negativa ou está esperando há meses? Análise do motivo e do caminho para recorrer, no INSS ou na Justiça.</p>
+        <a href="https://wa.me/5571991579080?text=Ol%C3%A1%2C%20Dra.%20N%C3%BAbia!%20Meu%20benef%C3%ADcio%20foi%20negado%20%2F%20est%C3%A1%20travado%20e%20quero%20uma%20an%C3%A1lise." target="_blank" rel="noopener">Pedir análise →</a>
+      </div>
+      <div class="serv">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6l7-3z" stroke-linejoin="round"/><path d="M9 11.5l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Planejamento Previdenciário</h3>
+        <p>Para quem ainda vai se aposentar: projeção do melhor momento e do melhor valor, antes de dar entrada no pedido.</p>
+        <a href="https://wa.me/5571991579080?text=Ol%C3%A1%2C%20Dra.%20N%C3%BAbia!%20Quero%20uma%20an%C3%A1lise%20de%20planejamento%20previdenci%C3%A1rio." target="_blank" rel="noopener">Pedir análise →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Como funciona</div>
+      <h2>Três passos, <em>sem sair de casa se não quiser</em></h2>
+    </div>
+    <div class="passos">
+      <div class="passo"><div class="num">1</div><h3>Conversa no WhatsApp</h3><p>Você conta o seu caso com as suas palavras. A primeira conversa é sem compromisso.</p></div>
+      <div class="passo"><div class="num">2</div><h3>Análise do seu histórico</h3><p>Suas contribuições e documentos são conferidos para apontar direitos, erros e prazos.</p></div>
+      <div class="passo"><div class="num">3</div><h3>Caminho definido</h3><p>Você sabe exatamente o próximo passo: requerimento, recurso ou revisão, com acompanhamento próximo.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="sobre">
+  <div class="wrap sobre-grid">
+    <div class="arco logo-frame"><img src="logo-nubia.png" alt="NS Advocacia, Dra. Núbia Santana"></div>
+    <div>
+      <div class="eyebrow">Sobre a advogada</div>
+      <h2>Especialista em previdenciário, <em>atendimento de verdade</em></h2>
+      <p>A Dra. <strong>Núbia Batista Santana</strong> comanda a <strong>NS Advocacia</strong>, dedicada ao Direito Previdenciário, com atendimento <strong>online e presencial em Ibirapitanga/BA</strong>.</p>
+      <p>A atuação cobre o que mais trava a vida de quem depende do INSS: <strong>aposentadorias, revisão de benefícios, salário-maternidade</strong> e benefícios negados ou parados.</p>
+      <p class="citacao">"Meu trabalho é transformar a burocracia do INSS em um caminho claro para você."</p>
+      <ul class="creds">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12.5l5 5L20 6.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Especialista em Direito Previdenciário</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12.5l5 5L20 6.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Atendimento online e presencial em Ibirapitanga/BA</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12.5l5 5L20 6.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Foco em aposentadorias, revisões e salário-maternidade</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12.5l5 5L20 6.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Atendimento das 09:00 às 17:00</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FAIXA -->
+<div class="faixa">
+  <div class="f1">Diferencial</div>
+  <div class="f2">Você não é só um número de benefício:<br>seu caso, analisado <em>de verdade</em>.</div>
+</div>
+
+<!-- FORMULÁRIO + FAQ -->
+<section id="contato">
+  <div class="wrap form-grid">
+    <div>
+      <div class="eyebrow">Peça sua análise</div>
+      <h2 class="serif" style="font-size:clamp(1.8rem,3.4vw,2.5rem);line-height:1.18;margin:14px 0 12px">Conte seu caso <em>com suas palavras</em></h2>
+      <p style="color:var(--suave);margin-bottom:8px">Preencha ao lado e a conversa abre direto no WhatsApp da Dra. Núbia, com a mensagem já montada.</p>
+      <ul class="dados">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Ibirapitanga/BA, presencial e online</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2" stroke-linecap="round"/></svg>Atendimento das 09:00 às 17:00</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" stroke-linejoin="round"/></svg>WhatsApp: (71) 99157-9080</li>
+      </ul>
+    </div>
+    <form id="formAnalise" novalidate>
+      <label for="f-nome">Seu nome *</label>
+      <input id="f-nome" type="text" placeholder="Como posso te chamar?" autocomplete="name">
+      <label for="f-tel">Seu WhatsApp *</label>
+      <input id="f-tel" type="tel" placeholder="(71) 90000-0000" autocomplete="tel">
+      <label for="f-tipo">Assunto</label>
+      <select id="f-tipo">
+        <option>Aposentadoria</option>
+        <option>Revisão do meu benefício</option>
+        <option>Salário-maternidade</option>
+        <option>Benefício negado / travado</option>
+        <option>Planejamento previdenciário</option>
+      </select>
+      <label for="f-msg">Seu caso (resumo)</label>
+      <textarea id="f-msg" rows="4" placeholder="Ex.: meu benefício foi negado e não sei o motivo..."></textarea>
+      <button class="btn-wa form-btn" type="submit">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.22-.08-.37-.12-.53.13-.16.24-.62.76-.76.94-.14.18-.28.2-.53.07-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.28.37-.42.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.13-.53-1.29-.74-1.78-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.68.31-.25.24-1.05 1.02-1.05 2.55s1.07 3.01 1.23 3.22c.16.2 2.12 3.24 5.14 4.54.72.31 1.28.5 1.72.63.72.23 1.38.2 1.9.12.58-.09 1.78-.72 2.19-1.45.41-.72.41-1.34.29-1.47-.13-.12-.24-.19-.5-.32z"/></svg>
+        Enviar e falar no WhatsApp
+      </button>
+      <p class="form-nota">Ao enviar, você será direcionado ao WhatsApp. Nenhum dado fica guardado neste site.</p>
+    </form>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="padding-top:0">
+  <div class="wrap" style="max-width:820px">
+    <div class="sec-head" style="text-align:center;margin-left:auto;margin-right:auto">
+      <div class="eyebrow">Perguntas frequentes</div>
+      <h2>Dúvidas comuns sobre <em>INSS e benefícios</em></h2>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Meu benefício foi negado. Ainda tem jeito?<span class="mais">+</span></button>
+      <div class="faq-a"><p>Na maioria dos casos, sim. A negativa pode ser contestada com recurso no próprio INSS ou na Justiça. O primeiro passo é analisar o motivo da negativa e os seus documentos.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Quem tem direito ao salário-maternidade?<span class="mais">+</span></button>
+      <div class="faq-a"><p>Seguradas do INSS em diversas situações, incluindo trabalhadoras com carteira assinada, autônomas e até desempregadas dentro do período de graça. Cada caso pede uma conferência das contribuições.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Vale a pena pedir revisão do benefício?<span class="mais">+</span></button>
+      <div class="faq-a"><p>Vale quando há erro no cálculo ou contribuição que ficou de fora do histórico. A análise compara o que você recebe com o que deveria receber e aponta se existe diferença a recuperar.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">O atendimento online funciona como?<span class="mais">+</span></button>
+      <div class="faq-a"><p>Pelo WhatsApp e por vídeo, com envio de documentos pelo celular. Você é atendido pela Dra. Núbia do começo ao fim, sem precisar se deslocar até Ibirapitanga.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Quanto tempo leva para sair o benefício?<span class="mais">+</span></button>
+      <div class="faq-a"><p>Depende do tipo de pedido e da fila do INSS. Na análise, você recebe uma expectativa realista para o seu caso e sabe o que pode acelerar o processo.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+  <div class="wrap cta-grid">
+    <div>
+      <div class="eyebrow">Dê o primeiro passo</div>
+      <h2>Não deixe seu direito <em>parado na fila</em> do INSS</h2>
+      <p>Peça a análise do seu caso com a Dra. Núbia e descubra, com clareza, o que você pode receber e qual é o próximo passo.</p>
+      <a class="btn-wa" href="https://wa.me/5571991579080?text=Ol%C3%A1%2C%20Dra.%20N%C3%BAbia!%20Vim%20pelo%20site%20e%20quero%20uma%20an%C3%A1lise%20do%20meu%20benef%C3%ADcio." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.22-.08-.37-.12-.53.13-.16.24-.62.76-.76.94-.14.18-.28.2-.53.07-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.28.37-.42.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.13-.53-1.29-.74-1.78-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.68.31-.25.24-1.05 1.02-1.05 2.55s1.07 3.01 1.23 3.22c.16.2 2.12 3.24 5.14 4.54.72.31 1.28.5 1.72.63.72.23 1.38.2 1.9.12.58-.09 1.78-.72 2.19-1.45.41-.72.41-1.34.29-1.47-.13-.12-.24-.19-.5-.32z"/></svg>
+        Falar com a Dra. Núbia
+      </a>
+      <p class="microcopy">Resposta pessoal pelo WhatsApp · Online e presencial em Ibirapitanga/BA</p>
+    </div>
+    <div class="arco logo-frame"><img src="logo-nubia.png" alt="NS Advocacia, Dra. Núbia Santana"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="nome">Núbia Santana</div>
+        <div style="font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ouro);font-weight:800;margin:2px 0 10px">Advocacia Previdenciária — Ibirapitanga/BA</div>
+        <div>Seu direito, defendido com clareza.</div>
+      </div>
+      <div>
+        <div>Ibirapitanga/BA, presencial e online</div>
+        <div>Atendimento das 09:00 às 17:00</div>
+      </div>
+      <div>
+        <div>WhatsApp: <a href="https://wa.me/5571991579080" target="_blank" rel="noopener">(71) 99157-9080</a></div>
+        <div>Instagram: <a href="https://www.instagram.com/nubiasantana.adv" target="_blank" rel="noopener">@nubiasantana.adv</a></div>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© 2026 Núbia Santana Advocacia Previdenciária. Todos os direitos reservados.</span>
+      <span>Conteúdo informativo. Cada caso é analisado individualmente.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5571991579080?text=Ol%C3%A1%2C%20Dra.%20N%C3%BAbia!%20Vim%20pelo%20site%20e%20quero%20uma%20an%C3%A1lise%20do%20meu%20benef%C3%ADcio." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.22-.08-.37-.12-.53.13-.16.24-.62.76-.76.94-.14.18-.28.2-.53.07-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.28.37-.42.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.13-.53-1.29-.74-1.78-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.68.31-.25.24-1.05 1.02-1.05 2.55s1.07 3.01 1.23 3.22c.16.2 2.12 3.24 5.14 4.54.72.31 1.28.5 1.72.63.72.23 1.38.2 1.9.12.58-.09 1.78-.72 2.19-1.45.41-.72.41-1.34.29-1.47-.13-.12-.24-.19-.5-.32z"/></svg>
+</a>
+
+<script>
+document.querySelectorAll('.faq-q').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var item=btn.parentElement, ans=item.querySelector('.faq-a'), aberto=item.classList.contains('aberto');
+    document.querySelectorAll('.faq-item.aberto').forEach(function(i){i.classList.remove('aberto');i.querySelector('.faq-a').style.maxHeight=null;});
+    if(!aberto){item.classList.add('aberto');ans.style.maxHeight=ans.scrollHeight+'px';}
+  });
+});
+document.getElementById('formAnalise').addEventListener('submit',function(e){
+  e.preventDefault();
+  var nome=document.getElementById('f-nome'), tel=document.getElementById('f-tel'),
+      tipo=document.getElementById('f-tipo').value, msg=document.getElementById('f-msg').value.trim(), ok=true;
+  [nome,tel].forEach(function(c){c.classList.remove('erro');});
+  if(!nome.value.trim()){nome.classList.add('erro');ok=false;}
+  if(!tel.value.trim()){tel.classList.add('erro');ok=false;}
+  if(!ok)return;
+  var texto='Olá, Dra. Núbia! Meu nome é '+nome.value.trim()+'. Assunto: '+tipo+'.'+(msg?' '+msg:'')+' (Meu WhatsApp: '+tel.value.trim()+')';
+  window.open('https://wa.me/5571991579080?text='+encodeURIComponent(texto),'_blank');
+});
+</script>
+</body>
+</html>
